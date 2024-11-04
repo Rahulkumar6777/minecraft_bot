@@ -5,17 +5,17 @@ let bot;
 // Function to create and connect the bot
 function createBot() {
   bot = mineflayer.createBot({
-    host: 'shop-introducing.joinmc.link', // Replace with your server IP or address
-    port: 25565, // Default Minecraft port
-    username: 'BotName', // Bot's username
+    host: 'raulkumar4545.aternos.me', // Replace with your server IP or address
+    port: 40206, // Default Minecraft port
+    username: 'miner', // Bot's username
     version: '1.21.1' // Set to match your server version
   });
 
   // Basic event handlers
   bot.on('spawn', () => {
     console.log('Bot has spawned and is ready!');
+    bot.chat('Hello, mai afk ja raha hu ');
     bot.chat('/afk'); // Enter AFK mode upon connecting
-    bot.chat('Hello, I am a bot!');
 
     // Make the bot jump every 20 seconds
     setInterval(() => {
